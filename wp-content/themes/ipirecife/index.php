@@ -46,8 +46,32 @@
           </div>  
         </div>
       </div>
-			<div class="col-md-4">sss</div>
-			<div class="col-md-4">sss</div>
+			<div class="col-md-4"><div class="container_box">
+          <div class="container_content">
+            <div class="row">
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+
+              </div>
+            </div>
+            <div class="container_footer text-center">
+              TESTE
+            </div>
+          </div>  
+        </div></div>
+			<div class="col-md-4"><div class="container_box">
+          <div class="container_content">
+            <div class="row">
+              <div class="col-md-12">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+
+              </div>
+            </div>
+            <div class="container_footer text-center">
+              TESTE
+            </div>
+          </div>  
+        </div></div>
 		</div>
     </div> <!-- /container -->
 <?php get_footer(); ?>   
