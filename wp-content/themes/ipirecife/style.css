@@ -6,35 +6,109 @@ Author URI:  http://www.prauebi.com.br
 Description: Projeto de deselvolvido pela Pra Uebi situada em Recife - PE, para a Primeira Igreja Presbiteriana Independente do Recife.
 Version: 1.0
 */
-.navbar{
-	min-height: 9em;
-}
-.navbar-default{
-	background: transparent;
-}
+
+
 body{
 	background: transparent;
 }
-.full {
-    background: url('images/ipi-foto-color-blue.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+
+.navbar{
+    min-height: 9em;
 }
-.top-buffer { margin-top:200px; }
+.navbar-default{
+    background: transparent;
+}
+
+.header-full {
+    background: url(images/ipi-foto-color-blue.jpg) no-repeat fixed;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+ul.nav {margin-top: 37px;}
+#btn-fixed {
+    border-radius: 30px;
+}
+
+.top-buffer { margin-top:300px; }
 .show-grid{background-color: #FFF;}
-.container_box{
+
+.box{
 	width: 100%;
 	height: 250px;
 	background-color: #FFF;
 	position: relative;
+    margin-top:50px;
 }
-.container_footer {
+
+.box-content {padding: 20px;}
+
+.box-footer {
 	width: 100%;
     padding: 20px 15px;
-    background-color: #f0b920;
     border-top: 1px solid #ddd;
     position: absolute;
     bottom: 0;
+    color: white;
 }
+
+#sou-novo   {background: #f0b920;}
+#sou-membro {background: #3fa5f0;}
+#mensagens  {background: #2cc76c;}
+
+.navBottom {
+    bottom: 0;
+    position: absolute;
+    display: block;
+    transition: all,ease-in-out,.2s .2s;
+    background: currentColor;
+    width: 100%;
+    height: 5%;
+    clear: both;
+    z-index: 9999;
+}
+
+.gallery-row {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    width: auto;
+}
+
+.tituloEventos {
+    color: #f0b920;
+    border-left: 5px solid currentColor;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.evento {
+    background-color: #222;
+    width: 210px;
+    height: 150px;
+    display: block;
+    color: white;
+    margin: 10px;
+}
+
+.tituloBlog {
+    color: #b13d3d;
+    border-left: 5px solid currentColor;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.tituloMapa {
+    color: #87c241;
+    border-left: 5px solid currentColor;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
