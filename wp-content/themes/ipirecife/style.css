@@ -7,16 +7,23 @@ Description: Projeto de deselvolvido pela Pra Uebi situada em Recife - PE, para 
 Version: 1.0
 */
 
-
 body{
 	background: transparent;
 }
 
+section {margin: 30px auto;}
+
+/*  HEADER  */
 .navbar{
     min-height: 9em;
 }
 .navbar-default{
     background: transparent;
+    color: white;
+}
+
+button.navbar-toggle {
+    margin-top: 45px;
 }
 
 .header-full {
@@ -29,42 +36,76 @@ body{
     text-align: center;
 }
 
-ul.nav {margin-top: 37px;}
+ul.nav {margin-top: 37px;margin-left: 50px;}
+
 #btn-fixed {
-    border-radius: 30px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bolder;
+    background: #218df9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #0079ff , #3ea3f1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0079ff, #3ea3f1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0079ff, #3ea3f1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0079ff , #3ea3f1); /* Standard syntax */
 }
 
 .top-buffer { margin-top:300px; }
 .show-grid{background-color: #FFF;}
+/*  HEADER  */
 
+
+/*  BOXES  */
 .box{
-	width: 100%;
-	height: 250px;
-	background-color: #FFF;
-	position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #FFF;
+    position: relative;
     margin-top:50px;
 }
 
-.box-content {padding: 20px;}
+.box-content {
+    padding: 20px 20px 20px 100px;
+    transition: all .2s;
+    display: flex;
+}
+
+.box-icon {
+    font-size: 10em;
+    text-align: center;
+    transition: all .2s;
+}
+
+.box-caption {
+    font-size: 1.3em;
+    transition: all .2s;
+    padding-top: 40px;
+    opacity: 0;
+}
 
 .box-footer {
-	width: 100%;
+    width: 100%;
     padding: 20px 15px;
     border-top: 1px solid #ddd;
     position: absolute;
     bottom: 0;
-    color: white;
+    color: white!important;
 }
 
-#sou-novo   {background: #f0b920;}
-#sou-membro {background: #3fa5f0;}
-#mensagens  {background: #2cc76c;}
+.show-caption {
+    margin-left: -50px;
+    opacity: 1;
+    padding-left: 80px;
+}
 
-.navBottom {
+.sou-novo, .sou-novo a:hover       {background: #f0b920!important;color: #f0b920;}
+.sou-membro, .sou-membro a:hover   {background: #3fa5f0!important;color: #3fa5f0;}
+.mensagens, .mensagens a:hover     {background: #2cc76c!important;color: #2cc76c;}
+
+.navBottom { 
     bottom: 0;
     position: absolute;
     display: block;
-    transition: all,ease-in-out,.2s .2s;
+    transition: all,ease-in-out,.15s .15s;
     background: currentColor;
     width: 100%;
     height: 5%;
@@ -72,6 +113,22 @@ ul.nav {margin-top: 37px;}
     z-index: 9999;
 }
 
+.navBottom:after {
+    content: "";
+    display: block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    margin: -19px auto;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 20px solid currentColor;
+}
+/*  BOXES  */
+
+
+
+/*  SITE CONTENT  */
 .gallery-row {
     display: flex;
     flex: 1 1 auto;
@@ -112,3 +169,29 @@ ul.nav {margin-top: 37px;}
     font-weight: bolder;
 }
 
+.ondeEstamos {
+    width: 100%;
+    background-color: #cbe6a3;
+    display: block;
+    height: 300px;
+}
+/*  SITE CONTENT  */
+
+
+/*  FOOTER  */
+#footer h2 {
+    color: #3fa5f0;
+    text-transform: uppercase;
+}
+
+#footer-bg {
+    display: block;
+    width: 100%;
+    height: 28px;
+    margin-top: 50px;
+    background: #31bc95; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #3fa5f0 , #26d147); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #3fa5f0, #26d147); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #3fa5f0, #26d147); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #3fa5f0 , #26d147); /* Standard syntax */
+}
