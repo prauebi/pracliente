@@ -8,24 +8,43 @@ Version: 1.0
 */
 
 body{
-	background: transparent;
+    background: transparent;
 }
 
 section {margin: 30px auto;}
 
-/*  HEADER  */
+/*  NAVBAR  */
 .navbar{
     min-height: 9em;
 }
 .navbar-default{
     background: transparent;
     color: white;
+    border-bottom: none;
 }
 
 button.navbar-toggle {
     margin-top: 45px;
 }
 
+ul.nav {
+    margin-top: 37px;
+    margin-left: 50px;
+}
+
+.navbar-nav>li>a{
+    color: white!important;
+    transition: all .2s;
+}
+.navbar-nav>li>a:hover{
+    color: white!important;
+    background-color: #3fa5f0!important;
+}
+
+
+/*  NAVBAR  */
+
+/*  HEADER  */
 .header-full {
     background: url(images/ipi-foto-color-blue.jpg) no-repeat fixed;
     background-size: cover;
@@ -36,12 +55,12 @@ button.navbar-toggle {
     text-align: center;
 }
 
-ul.nav {margin-top: 37px;margin-left: 50px;}
-
 #btn-fixed {
     border-radius: 40px;
+    transition: all .2s;
     color: white;
     font-weight: bolder;
+    opacity: .8;
     background: #218df9; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, #0079ff , #3ea3f1); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, #0079ff, #3ea3f1); /* For Opera 11.1 to 12.0 */
@@ -49,13 +68,17 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
     background: linear-gradient(to right, #0079ff , #3ea3f1); /* Standard syntax */
 }
 
-.top-buffer { margin-top:300px; }
+#btn-fixed:hover {
+    opacity: 1;
+}
+
+.top-buffer { margin-top:20em; }
 .show-grid{background-color: #FFF;}
 /*  HEADER  */
 
 
-/*  BOXES  */
-.box{
+/*  CARDS  */
+.card{
     width: 100%;
     height: 250px;
     background-color: #FFF;
@@ -63,26 +86,26 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
     margin-top:50px;
 }
 
-.box-content {
+.card-content {
     padding: 20px 20px 20px 100px;
     transition: all .2s;
     display: flex;
 }
 
-.box-icon {
+.card-icon {
     font-size: 10em;
     text-align: center;
     transition: all .2s;
 }
 
-.box-caption {
+.card-caption {
     font-size: 1.3em;
     transition: all .2s;
     padding-top: 40px;
     opacity: 0;
 }
 
-.box-footer {
+.card-footer {
     width: 100%;
     padding: 20px 15px;
     border-top: 1px solid #ddd;
@@ -101,7 +124,7 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
 .sou-membro, .sou-membro a:hover   {background: #3fa5f0!important;color: #3fa5f0;}
 .mensagens, .mensagens a:hover     {background: #2cc76c!important;color: #2cc76c;}
 
-.navBottom { 
+.nav-bottom { 
     bottom: 0;
     position: absolute;
     display: block;
@@ -110,10 +133,9 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
     width: 100%;
     height: 5%;
     clear: both;
-    z-index: 9999;
 }
 
-.navBottom:after {
+.nav-bottom:after {
     content: "";
     display: block;
     vertical-align: middle;
@@ -124,19 +146,12 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
     border-right: 30px solid transparent;
     border-bottom: 20px solid currentColor;
 }
-/*  BOXES  */
-
+/*  CARDS  */
 
 
 /*  SITE CONTENT  */
-.gallery-row {
-    display: flex;
-    flex: 1 1 auto;
-    flex-flow: row wrap;
-    width: auto;
-}
 
-.tituloEventos {
+#eventos h2 {
     color: #f0b920;
     border-left: 5px solid currentColor;
     padding: 5px 10px;
@@ -144,16 +159,16 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
     font-weight: bolder;
 }
 
-.evento {
+.box {
     background-color: #222;
-    width: 210px;
-    height: 150px;
-    display: block;
+    width: 100%;
+    height: 200px;
+    position: relative;
     color: white;
-    margin: 10px;
+    margin-top: 50px;
 }
 
-.tituloBlog {
+#blog h2 {
     color: #b13d3d;
     border-left: 5px solid currentColor;
     padding: 5px 10px;
@@ -161,7 +176,18 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
     font-weight: bolder;
 }
 
-.tituloMapa {
+/*   SLIDES BLOG  */
+
+.slider {width: 100%;}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black!important;
+}
+
+/*   SLIDES BLOG  */
+
+.titulo-mapa {
     color: #87c241;
     border-left: 5px solid currentColor;
     padding: 5px 10px;
@@ -169,7 +195,7 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
     font-weight: bolder;
 }
 
-.ondeEstamos {
+.mapa {
     width: 100%;
     background-color: #cbe6a3;
     display: block;
@@ -195,3 +221,18 @@ ul.nav {margin-top: 37px;margin-left: 50px;}
     background: -moz-linear-gradient(right, #3fa5f0, #26d147); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #3fa5f0 , #26d147); /* Standard syntax */
 }
+
+/*  RESPONSIVO  */
+@media (max-width: 992px) {
+
+    .header-full {
+        height: 180%;
+    }
+
+    .nav-bottom {
+        top: 180%;
+    }
+
+    .top-buffer { margin-top:17em; }
+}
+/*  RESPONSIVO  */

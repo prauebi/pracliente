@@ -19,7 +19,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">INICIAL</a></li>
+              <li><a href="#">INICIAL</a></li>
               <li><a href="#about">CONHEÇA-NOS</a></li>
               <li><a href="#contact">NOSSOS ENCONTROS</a></li>
               <li><a href="#contact">BLOG</a></li>
@@ -40,14 +40,14 @@
   		<div class="row top-buffer">
 
   			<div class="col-md-4">
-          <div class="box" id="sou-novo">
+          <div class="card" id="sou-novo">
 
-            <div class="box-content" id="content-novo">  
-              <div class="box-icon">
+            <div class="card-content" id="content-novo">  
+              <div class="card-icon">
                   <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
               </div>  
 
-              <div class="box-caption" id="caption-novo">
+              <div class="card-caption" id="caption-novo">
                 <ul>
                   <li>Link 01</li>
                   <li>Link 02</li>
@@ -55,20 +55,20 @@
                 </ul>
               </div>
             </div>
-            <div class="box-footer text-center sou-novo">
+            <div class="card-footer text-center sou-novo">
             SOU NOVO AQUI
             </div>
           </div>
-        </div> <!-- BOX 1 -->
+        </div> <!-- card 1 -->
 
         <div class="col-md-4">
-          <div class="box" id="sou-membro">
-            <div class="box-content" id="content-membro">  
-              <div class="box-icon">
+          <div class="card" id="sou-membro">
+            <div class="card-content" id="content-membro">  
+              <div class="card-icon">
                   <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
               </div>  
 
-              <div class="box-caption" id="caption-membro">
+              <div class="card-caption" id="caption-membro">
                 <ul>
                   <li>Link 01</li>
                   <li>Link 02</li>
@@ -76,20 +76,20 @@
                 </ul>
               </div>
             </div> 
-            <div class="box-footer text-center sou-membro">
+            <div class="card-footer text-center sou-membro">
             SOU MEMBRO
             </div>
           </div>
-        </div> <!-- BOX 2 -->
+        </div> <!-- card 2 -->
 
         <div class="col-md-4">
-          <div class="box" id="mensagens">
-            <div class="box-content" id="content-mensagens">  
-              <div class="box-icon">
+          <div class="card" id="mensagens">
+            <div class="card-content" id="content-mensagens">  
+              <div class="card-icon">
                   <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
               </div>  
 
-              <div class="box-caption" id="caption-mensagens">
+              <div class="card-caption" id="caption-mensagens">
                 <ul>
                   <li>Link 01</li>
                   <li>Link 02</li>
@@ -97,125 +97,185 @@
                 </ul>
               </div>
             </div> 
-            <div class="box-footer text-center mensagens">
+            <div class="card-footer text-center mensagens">
             MENSAGENS
             </div>
           </div>
-        </div> <!-- BOX 3 -->
+        </div> <!-- card 3 -->
 
-  		</div> <!-- FIM BOXES -->
+  		</div> <!-- END CARDS -->
 
 
     </div> <!-- /container -->
-    <div class="navBottom">
+    <div class="nav-bottom">
     </div>
 
     <div class="container">
 
     <section id="eventos">
       <div class="row top-buffer">
-        <h2 class="tituloEventos">próximos eventos</h2>
+        <h2>próximos eventos</h2>
 
-        <div class="gallery-row">
+        <section class="responsive slider">
 
-          <div class="evento">
-            <div class="evento-content">
-                 
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="evento">
-            <div class="evento-content">
-                 
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="evento">
-            <div class="evento-content">
-                 
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="evento">
-            <div class="evento-content">
-                 
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="evento">
-            <div class="evento-content">
-                 
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
+              </div>
             </div>
-          </div>
 
-        </div>
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
+
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
+
+                </div>
+              </div>
+            </div>
+
+        </section>
+
+      </div>
 
       </div>
     </section>
 
-    </div><!--  FIM CONTAINER EVENTOS -->
+    </div><!--  END CONTAINER EVENTOS -->
 
     <div class="container">
       <section id="blog">
         <div class="row">
-        <h2 class="tituloBlog">blog</h2>
+          <h2>blog</h2>
+          
+          <section class="responsive slider">
 
-          <div class="gallery-row">
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
-            <div class="evento">
-              <div class="evento-content">
-                   
-
+                </div>
               </div>
-            </div>
+            </div> <!-- BLOG BOX 1 -->
 
-            <div class="evento">
-              <div class="evento-content">
-                   
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
               </div>
-            </div>
+            </div> <!-- BLOG BOX 2 -->
 
-            <div class="evento">
-              <div class="evento-content">
-                   
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
               </div>
-            </div>
+            </div> <!-- BLOG BOX 3 -->
 
-            <div class="evento">
-              <div class="evento-content">
-                   
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
               </div>
-            </div>
+            </div> <!-- BLOG BOX 4 -->
 
-            <div class="evento">
-              <div class="evento-content">
-                   
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
 
+                </div>
               </div>
-            </div>
-          </div>
-      </section>
-      </div>
+            </div> <!-- BLOG BOX 5 -->
 
-    </div> <!-- FIM CONTAINER BLOG -->
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
+
+                </div>
+              </div>
+            </div> <!-- BLOG BOX 6 -->
+
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
+
+                </div>
+              </div>
+            </div> <!-- BLOG BOX 7 -->
+
+            <div class="col-md-3">
+              <div class="box">
+                <div class="evento-content">
+
+                </div>
+              </div>
+            </div> <!-- BLOG BOX 8 -->
+
+          </section>
+        </div>
+
+      </section> <!-- END SECTION BLOG -->
+    </div> <!-- END CONTAINER BLOG -->
 
     <div class="container">
       
       <div class="row">
-        <h2 class="tituloMapa">onde estamos</h2>
+        <h2 class="titulo-mapa">onde estamos</h2>
       </div>
 
     </div> <!-- TITULO MAPA -->
 
-    <div class="ondeEstamos"></div>
+    <div class="mapa"></div>
 
     <div class="container">
       <div class="row">
@@ -245,7 +305,10 @@
 
           <div class="col-md-4">
             <h2>contato</h2>
-
+            <b>Email:</b><br>
+            contato@primeiraipirecife.com.br<br><br>
+            <b>Telefone:</b><br>
+            (81) 3441-1537
             
           </div>
         </section>
