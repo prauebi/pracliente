@@ -14,7 +14,8 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-    		      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo_ipi_recife.png" alt="Logo Ipi">
+    		      <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo_ipi_recife.png" alt="Logo Ipi" id="logo-bw">
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo-menu-colorida.png" id="logo-color" alt="Logo Ipi">
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -44,12 +45,12 @@
 
             <div class="card-content" id="content-novo">  
               <div class="card-icon">
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home01.png" class="center-block" alt="icone">
               </div>  
 
               <div class="card-caption" id="caption-novo">
                 <ul>
-                  <li>Link 01</li>
+                  <li>Conheça a 1 IPI Recife</li>
                   <li>Link 02</li>
                   <li>Link 03</li>
                 </ul>
@@ -61,11 +62,11 @@
           </div>
         </div> <!-- card 1 -->
 
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-1">
           <div class="card" id="sou-membro">
             <div class="card-content" id="content-membro">  
               <div class="card-icon">
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home02.png" class="center-block" alt="icone 2">
               </div>  
 
               <div class="card-caption" id="caption-membro">
@@ -86,7 +87,7 @@
           <div class="card" id="mensagens">
             <div class="card-content" id="content-mensagens">  
               <div class="card-icon">
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home03.png" class="center-block" alt="icone 3">
               </div>  
 
               <div class="card-caption" id="caption-mensagens">
@@ -107,6 +108,9 @@
 
 
     </div> <!-- /container -->
+
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/arrow.png" class="center-block" alt="arrow">
+
     <div class="nav-bottom">
     </div>
 

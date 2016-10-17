@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <title>Primeira Igreja Presbiteriana Independente do Recife</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">

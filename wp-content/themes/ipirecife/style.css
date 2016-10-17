@@ -46,7 +46,7 @@ ul.nav {
 
 /*  HEADER  */
 .header-full {
-    background: url(images/ipi-foto-color-blue.jpg) no-repeat fixed;
+    background: url(images/slide-home.jpg) no-repeat fixed;
     background-size: cover;
     position: absolute;
     height: 100%;
@@ -129,13 +129,20 @@ ul.nav {
     position: absolute;
     display: block;
     transition: all,ease-in-out,.15s .15s;
-    background: currentColor;
+    background: #4299d4;
+    background: -moz-linear-gradient(left, #4299d4 0%, #389943 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #4299d4), color-stop(100%, #389943));
+    background: -webkit-linear-gradient(left, #4299d4 0%, #389943 100%);
+    background: -o-linear-gradient(left, #4299d4 0%, #389943 100%);
+    background: -ms-linear-gradient(left, #4299d4 0%, #389943 100%);
+    background: linear-gradient(to right, #4299d4 0%, #389943 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4299d4', endColorstr='#389943', GradientType=1 );
     width: 100%;
     height: 5%;
     clear: both;
 }
 
-.nav-bottom:after {
+/*.nav-bottom:after {
     content: "";
     display: block;
     vertical-align: middle;
@@ -144,8 +151,8 @@ ul.nav {
     margin: -19px auto;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-bottom: 20px solid currentColor;
-}
+    border-bottom: 20px solid #3D998C;
+}*/
 /*  CARDS  */
 
 
