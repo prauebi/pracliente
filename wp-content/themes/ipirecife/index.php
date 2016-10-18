@@ -38,7 +38,7 @@
 
     <div class="container">
 
-  		<div class="row top-buffer">
+  		<div class="row top-buffer" id="focus">
 
   			<div class="col-md-4">
           <div class="card" id="sou-novo">
@@ -62,7 +62,7 @@
           </div>
         </div> <!-- card 1 -->
 
-        <div class="col-md-4 col-sm-1">
+        <div class="col-md-4 active">
           <div class="card" id="sou-membro">
             <div class="card-content" id="content-membro">  
               <div class="card-icon">

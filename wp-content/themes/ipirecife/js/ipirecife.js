@@ -1,43 +1,47 @@
 $(document).ready(function() {
 
 	$("#sou-novo").hover(function() {
-    	$(".nav-bottom").toggleClass("sou-novo");
-    	$("#caption-novo").toggleClass("show-caption");
-    	$("#content-novo").toggleClass("show-caption");
+      $(".nav-bottom").toggleClass("sou-novo");          //Muda a cor da barra de fundo
+    	$(".lavalamp-object").toggleClass("sou-novo");     //Muda a cor do triangulo lavalamp
+    	$("#caption-novo").toggleClass("show-caption");    //Mostra os links
+    	$("#content-novo").toggleClass("show-caption");    //Desliza ícone para esquerda
 	});
 
 	$("#sou-membro").hover(function() {
-    	$(".nav-bottom").toggleClass("sou-membro");
+      $(".nav-bottom").toggleClass("sou-membro");
+    	$(".lavalamp-object").toggleClass("sou-membro");
     	$("#caption-membro").toggleClass("show-caption");
     	$("#content-membro").toggleClass("show-caption");
 	});
 
 	$("#mensagens").hover(function() {
-    	$(".nav-bottom").toggleClass("mensagens");
+      $(".nav-bottom").toggleClass("mensagens");
+    	$(".lavalamp-object").toggleClass("mensagens");
     	$("#caption-mensagens").toggleClass("show-caption");
     	$("#content-mensagens").toggleClass("show-caption");
 	});
 
-  $("#mensagens").mouseenter(
-  function(){
-    var $this = $(this);
-    var offset = $this.offset();
-    var width = $this.width();
-    var height = $this.height();
+  // $("#mensagens").mouseenter(
+  // function(){
+  //   var $this = $(this);
+  //   var offset = $this.offset();
+  //   var width = $this.width();
+  //   var height = $this.height();
 
-    var centerX = offset.left + width / 2;
-    var centerY = offset.top + height / 2;
+  //   var centerX = offset.left + width / 2;
+  //   var centerY = offset.top + height / 2;
 
-    $(".nav-bottom").after().animate({left:centerX },'slow');
+  //   $(".nav-bottom").after().animate({left:centerX },'slow');
 
-  });
-$(".tabb tr").mouseleave(
-  function() {
-    $(this).find("td #headie").animate({marginLeft:'0px'},'slow')
-  });
+  // });
+
+// $(".tabb tr").mouseleave(
+//   function() {
+//     $(this).find("td #headie").animate({marginLeft:'0px'},'slow')
+//   });
 
   	///////////////////////////////////
-    //    Scroll To show Shadow         
+    //     Mostra logo no scroll     // 
     ///////////////////////////////////
 
     $('#logo-color').hide();
@@ -50,7 +54,8 @@ $(".tabb tr").mouseleave(
             $('#logo-bw').hide();
 
             $(".navbar-default").css({
-                'background': 'white'
+                'background': 'white',
+                'color': '#222'
             });
             
         } else {
@@ -98,4 +103,14 @@ $(".tabb tr").mouseleave(
         // instead of a settings object
       ]
     });
+
+
+    //lavalamp
+    $('#focus').lavalamp({
+      easing: 'swing',
+      enableFocus: true
+    });
+
+    $('#setactive').data('lavalampActive',a).lavalamp('update');
+
 });

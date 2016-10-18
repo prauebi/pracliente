@@ -120,39 +120,33 @@ ul.nav {
     padding-left: 80px;
 }
 
-.sou-novo, .sou-novo a:hover       {background: #f0b920!important;color: #f0b920;}
-.sou-membro, .sou-membro a:hover   {background: #3fa5f0!important;color: #3fa5f0;}
-.mensagens, .mensagens a:hover     {background: #2cc76c!important;color: #2cc76c;}
-
 .nav-bottom { 
     bottom: 0;
+    transition: all .1s;
     position: absolute;
     display: block;
-    transition: all,ease-in-out,.15s .15s;
     background: #4299d4;
-    background: -moz-linear-gradient(left, #4299d4 0%, #389943 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #4299d4), color-stop(100%, #389943));
-    background: -webkit-linear-gradient(left, #4299d4 0%, #389943 100%);
-    background: -o-linear-gradient(left, #4299d4 0%, #389943 100%);
-    background: -ms-linear-gradient(left, #4299d4 0%, #389943 100%);
-    background: linear-gradient(to right, #4299d4 0%, #389943 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4299d4', endColorstr='#389943', GradientType=1 );
     width: 100%;
     height: 5%;
     clear: both;
 }
 
-/*.nav-bottom:after {
+
+.lavalamp-object {
+    background-color:transparent!important; /*impede que o triangulo tenha fundo*/
     content: "";
     display: block;
-    vertical-align: middle;
-    width: 0;
+    width: 30px!important; /*define largura padrão do triangulo*/
     height: 0;
-    margin: -19px auto;
+    margin-top: 185px;
+    margin-left: 170px;
+    position: absolute;
+    color: #4299d4;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-bottom: 20px solid #3D998C;
-}*/
+    border-bottom: 20px solid currentColor;
+}
+
 /*  CARDS  */
 
 
@@ -229,17 +223,20 @@ ul.nav {
     background: linear-gradient(to right, #3fa5f0 , #26d147); /* Standard syntax */
 }
 
+
+.sou-novo, .sou-novo a:hover       {background: #f0b920;color: #f0b920;}
+.sou-membro, .sou-membro a:hover   {background: #3fa5f0;color: #3fa5f0;}
+.mensagens, .mensagens a:hover     {background: #2cc76c;color: #2cc76c;}
+
 /*  RESPONSIVO  */
 @media (max-width: 992px) {
 
-    .header-full {
-        height: 180%;
-    }
+    .header-full {height: 180%;}
 
-    .nav-bottom {
-        top: 180%;
-    }
+    .nav-bottom {top: 180%;}
 
-    .top-buffer { margin-top:17em; }
+    .lavalamp-object {display: none;}
+
+    .top-buffer {margin-top:17em;}
 }
 /*  RESPONSIVO  */
