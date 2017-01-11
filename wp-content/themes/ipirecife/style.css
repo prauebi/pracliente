@@ -3,12 +3,12 @@ Theme Name: Primeira IPI Recife
 Theme URI: http://www.prauebi.com.br
 Author: Time Pra Uebi
 Author URI:  http://www.prauebi.com.br
-Description: Projeto de deselvolvido pela Pra Uebi situada em Recife - PE, para a Primeira Igreja Presbiteriana Independente do Recife.
+Description: Projeto de desenvolvido pela Pra Uebi situada em Recife - PE, para a Primeira Igreja Presbiteriana Independente do Recife.
 Version: 1.0
 */
 
-body{
-    background: transparent;
+body {
+    background-color: transparent;
 }
 
 section {margin: 30px auto;}
@@ -32,13 +32,48 @@ ul.nav {
     margin-left: 50px;
 }
 
-.navbar-nav>li>a{
-    color: white!important;
-    transition: all .2s;
+.menu-topo a,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover{
+    color: white;
 }
-.navbar-nav>li>a:hover{
+.menu-topo a:hover{
+    border-bottom: #3fa5f0 3px solid;
+}
+
+#logo-color {
+    display: none;
+}
+
+.navbar-white {
+    background: white;
+}
+
+.navbar-white a {color:#3fa5f0!important;}
+
+#btn-fixed,
+#btn-fixed-page {
+    border-radius: 40px;
+    transition: all .2s;
+    color: white;
+    font-weight: bolder;
+    background: #218df9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #0079ff , #3ea3f1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0079ff, #3ea3f1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0079ff, #3ea3f1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0079ff , #3ea3f1); /* Standard syntax */
+}
+
+.btn-fixed {
+    background: transparent!important;
+    border: 3px solid currentColor;
+    color: inherit;
+}
+
+.btn-fixed:hover {
+    background: #218df9!important;
+    border: 3px solid currentColor;
     color: white!important;
-    background-color: #3fa5f0!important;
 }
 
 
@@ -55,25 +90,57 @@ ul.nav {
     text-align: center;
 }
 
-#btn-fixed {
-    border-radius: 40px;
-    transition: all .2s;
+.header-page {
+    position: relative;
+    margin-bottom: 3em;
+    margin-top: 126px;
+    color: white;
+}
+
+.content-header-page {
+    background: url(images/slide-home.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 4em;
+    height: 200px;
+}
+
+.content-header-page h1 {
+    border-left: 5px solid currentColor;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.menu-page {
+    background: #8cc540;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 15px 0 5px;
+    font-size: 1.2em;
+}
+
+.menu-page a {
     color: white;
     font-weight: bolder;
-    opacity: .8;
-    background: #218df9; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #0079ff , #3ea3f1); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #0079ff, #3ea3f1); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #0079ff, #3ea3f1); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #0079ff , #3ea3f1); /* Standard syntax */
+    transition: all 0.2s;
+    text-decoration: none; 
+    text-transform: uppercase;
 }
 
-#btn-fixed:hover {
-    opacity: 1;
+.menu-page a:hover {
+    color: #336502;
 }
 
-.top-buffer { margin-top:20em; }
-.show-grid{background-color: #FFF;}
+.menu-page li {
+    display: inline;
+    padding-left: 10px;
+}
+
+.top-buffer { margin-top:18em; }
+.show-grid  {background-color: #FFF;}
+
 /*  HEADER  */
 
 
@@ -87,22 +154,29 @@ ul.nav {
 }
 
 .card-content {
-    padding: 20px 20px 20px 100px;
     transition: all .2s;
+    width: 80%;
+    padding-top: 20px;
     display: flex;
 }
 
-.card-icon {
-    font-size: 10em;
-    text-align: center;
+.card-icon img {
+    transform: translateX(100%);
     transition: all .2s;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .card-caption {
-    font-size: 1.3em;
+    font-size: 1em;
     transition: all .2s;
-    padding-top: 40px;
+    padding-top: 20px;
     opacity: 0;
+}
+
+.card-caption li {
+    list-style: none;
+    margin-left: -30px;
 }
 
 .card-footer {
@@ -115,9 +189,19 @@ ul.nav {
 }
 
 .show-caption {
-    margin-left: -50px;
     opacity: 1;
-    padding-left: 80px;
+}
+
+.pull-img-right {
+    transform: translateX(-10%)!important;
+}
+
+.flex {
+    display: flex!important;
+}
+
+.block {
+    display: block!important;
 }
 
 .nav-bottom { 
@@ -139,7 +223,7 @@ ul.nav {
     width: 30px!important; /*define largura padrão do triangulo*/
     height: 0;
     margin-top: 185px;
-    margin-left: 170px;
+    margin-left: 164px;
     position: absolute;
     color: #4299d4;
     border-left: 30px solid transparent;
@@ -162,11 +246,17 @@ ul.nav {
 
 .box {
     background-color: #222;
-    width: 100%;
     height: 200px;
+    max-height: 195px;
     position: relative;
     color: white;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
 }
 
 #blog h2 {
@@ -177,32 +267,245 @@ ul.nav {
     font-weight: bolder;
 }
 
-/*   SLIDES BLOG  */
-
-.slider {width: 100%;}
-
-.slick-prev:before,
-.slick-next:before {
-    color: black!important;
-}
-
-/*   SLIDES BLOG  */
-
 .titulo-mapa {
     color: #87c241;
     border-left: 5px solid currentColor;
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-transform: uppercase;
     font-weight: bolder;
 }
 
 .mapa {
     width: 100%;
-    background-color: #cbe6a3;
+    background-color: #EAEAEA;
     display: block;
-    height: 300px;
+    height: 500px;
+    margin: 50px auto;
 }
+
+main h2 {
+    color: #8cc540;
+    text-transform: uppercase;
+    border-bottom: dashed 3px currentColor;
+    margin: 35px auto; 
+}
+
+main h4 {
+    text-transform: uppercase;
+    color: #666;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#thumb-about img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ball {
+    display: block;
+    height: 220px;
+    width: 220px;
+    background-color: #222;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.membro {
+    text-align: justify;
+}
+
+.crenca {
+    padding: 20px;
+    transition: all .2s;
+}
+
+.crenca:hover {
+    background-color: #ededed;
+}
+
+#encontros h2,
+#posts h2,
+#contact h2 {
+    color: #f18d1e;
+    text-transform: uppercase;
+    border-bottom: dashed 3px currentColor;
+    margin: 35px auto;
+}
+
+#filters {
+    margin:1%;
+    padding:0;
+    list-style:none;
+}
+
+#filters li {
+    float:left;
+}
+
+#filters li span {
+    display: block;
+    padding:5px 20px;       
+    text-decoration:none;
+    color:#666;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#filters li span.active,
+#filters li span:hover,
+#filters li span:active,
+#filters li span:focus {
+    background: #ededed;
+}
+
+#form input {
+    margin: 10px auto;
+    transition: all .2s;
+}
+
+#form input,
+#form textarea {
+    border: 2px solid currentColor;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #444;
+}
+
+input[type="text"]{
+    width: 49.7%;
+    display: inline-block;
+}
+
+input[name="name"]{
+    width: 100%;
+    display: block;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #444!important;
+    color: white!important;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    min-height: 200px;
+}
+
 /*  SITE CONTENT  */
+
+
+
+/*  POSTAGENS  */
+.post-navi {
+    color: #aaa;
+    border: 1px solid currentColor;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 10px;
+    transition: all .2s;
+}
+
+.post-navi:hover {
+    background: #aaa;
+    color: white;
+    border-color: #aaa;
+}
+
+article h2 {
+    color: #f18d1e;
+    text-transform: uppercase;
+    border-top: dashed 3px currentColor;
+    padding-top: 20px;
+}
+
+.entry-thumb img {
+    display: block;
+    margin: 20px auto;
+}
+
+.read-ctrl {
+    display: block;
+    width: 100%;
+    height: 30px;
+    color: #959595;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.read-mode {
+    color: white;
+    padding: 3px 15px;
+    cursor: pointer;
+    background-color: #959595;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.plus,
+.minus {
+    cursor: pointer;
+    color: white;
+    background-color: #959595;
+    border-radius: 50%;
+    padding: 1px 5px;
+}
+
+/*  POSTAGENS  */
+
+aside {display: block;}
+
+aside h3 {
+    color: #69c72b;
+    margin-top: 10px!important;
+    text-transform: uppercase;
+    border-bottom: dashed 3px currentColor;
+    margin: 35px auto;
+}
+
+.last-posts {
+    display: flex;
+}
+
+.last-posts img {
+    max-width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 30px;
+}
+
+h5.entry-title {
+    color: #444;
+    text-decoration: none;
+}
+
+#posts h2 {
+    margin-top: 3px;
+}
+
+.post h3 {
+    color:#f18d1e;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.post p {
+    text-align: justify;
+}
+
+/*   SLIDES BLOG  */
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+/*   SLIDES BLOG  */
 
 
 /*  FOOTER  */
@@ -224,9 +527,17 @@ ul.nav {
 }
 
 
-.sou-novo, .sou-novo a:hover       {background: #f0b920;color: #f0b920;}
-.sou-membro, .sou-membro a:hover   {background: #3fa5f0;color: #3fa5f0;}
-.mensagens, .mensagens a:hover     {background: #2cc76c;color: #2cc76c;}
+.sou-novo, .sou-novo a:hover       {background: #f0b920;color: #f0b920;}    /*AMARELO*/
+.sou-membro, .sou-membro a:hover   {background: #3fa5f0;color: #3fa5f0;}    /*AZUL*/
+.mensagens, .mensagens a:hover     {background: #2cc76c;color: #2cc76c;}    /*VERDE*/
+
+
+.target:before {
+  content:"";
+  display:block;
+  height:200px; /* fixed header height*/
+  margin:-200px 0 0; /* negative fixed header height */
+}
 
 /*  RESPONSIVO  */
 @media (max-width: 992px) {

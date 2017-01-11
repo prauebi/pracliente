@@ -3,68 +3,50 @@ $(document).ready(function() {
 	$("#sou-novo").hover(function() {
       $(".nav-bottom").toggleClass("sou-novo");          //Muda a cor da barra de fundo
     	$(".lavalamp-object").toggleClass("sou-novo");     //Muda a cor do triangulo lavalamp
-    	$("#caption-novo").toggleClass("show-caption");    //Mostra os links
-    	$("#content-novo").toggleClass("show-caption");    //Desliza ícone para esquerda
-	});
+    	$("#caption-novo").toggleClass("show-caption");
+      $("#sou-novo-icon").toggleClass("pull-img-right");
+  });
 
-	$("#sou-membro").hover(function() {
+  $("#sou-membro").hover(function() {
       $(".nav-bottom").toggleClass("sou-membro");
-    	$(".lavalamp-object").toggleClass("sou-membro");
-    	$("#caption-membro").toggleClass("show-caption");
-    	$("#content-membro").toggleClass("show-caption");
-	});
+      $(".lavalamp-object").toggleClass("sou-membro");
+      $("#caption-membro").toggleClass("show-caption");
+      $("#sou-membro-icon").toggleClass("pull-img-right");
+  });
 
-	$("#mensagens").hover(function() {
+  $("#mensagens").hover(function() {
       $(".nav-bottom").toggleClass("mensagens");
-    	$(".lavalamp-object").toggleClass("mensagens");
-    	$("#caption-mensagens").toggleClass("show-caption");
-    	$("#content-mensagens").toggleClass("show-caption");
+      $(".lavalamp-object").toggleClass("mensagens");
+      $("#caption-mensagens").toggleClass("show-caption");
+      $("#mensagens-icon").toggleClass("pull-img-right");
 	});
 
-  // $("#mensagens").mouseenter(
-  // function(){
-  //   var $this = $(this);
-  //   var offset = $this.offset();
-  //   var width = $this.width();
-  //   var height = $this.height();
-
-  //   var centerX = offset.left + width / 2;
-  //   var centerY = offset.top + height / 2;
-
-  //   $(".nav-bottom").after().animate({left:centerX },'slow');
-
-  // });
-
-// $(".tabb tr").mouseleave(
-//   function() {
-//     $(this).find("td #headie").animate({marginLeft:'0px'},'slow')
-//   });
 
   	///////////////////////////////////
     //     Mostra logo no scroll     // 
     ///////////////////////////////////
 
-    $('#logo-color').hide();
-
     $(window).scroll(function() {
-        var y = $(window).scrollTop();
-        if (y > 300) {
-            $('#logo-color').show();
 
+        var y = $(window).scrollTop();
+        var windowHeight = (window.innerHeight)*0.20; //pega ,em pixels, 20% do tamanho da janela
+
+        if (y > windowHeight) { //compara a distancia do top da janela com o tamanho da janela
+
+            $('#logo-color').show();
             $('#logo-bw').hide();
 
-            $(".navbar-default").css({
-                'background': 'white',
-                'color': '#222'
-            });
+            $(".nav-home").addClass("navbar-white");
+
+            $("#btn-fixed").addClass("btn-fixed");
             
         } else {
             $('#logo-color').hide();
             $('#logo-bw').show();
 
-            $(".navbar-default").css({
-                'background': 'transparent'
-            });
+            $(".nav-home").removeClass("navbar-white");
+
+            $("#btn-fixed").removeClass("btn-fixed");
         }
     });
 
@@ -103,14 +85,5 @@ $(document).ready(function() {
         // instead of a settings object
       ]
     });
-
-
-    //lavalamp
-    $('#focus').lavalamp({
-      easing: 'swing',
-      enableFocus: true
-    });
-
-    $('#setactive').data('lavalampActive',a).lavalamp('update');
 
 });
