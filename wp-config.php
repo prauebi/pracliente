@@ -18,24 +18,31 @@
  * @package WordPress
  */
 
+if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+    include( dirname( __FILE__ ) . '/local-config.php' );
+}
+else {
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'ipirecife');
+define('DB_NAME', 'primeiraipirec');
 
 /** MySQL database username */
-define('DB_USER', 'admin');
+define('DB_USER', 'primeiraipirec');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'prauebi2015');
+define('DB_PASSWORD', 'Ipirecife2016');
 
 /** MySQL hostname */
-define('DB_HOST', '192.168.0.125');
+define('DB_HOST', 'mysql.primeiraipirecife.com.br');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+}
 
 /**#@+
  * Authentication Unique Keys and Salts.
