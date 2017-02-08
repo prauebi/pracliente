@@ -7,3 +7,7 @@ migrar/
 .Trashes
 ehthumbs.db
 Thumbs.db
+wp-content/themes/ipirecife/gulpfile.js
+wp-content/themes/ipirecife/package.json
+wp-content/themes/ipirecife/node_modules
+wp-content/themes/ipirecife/scss

@@ -8,11 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 
     <title>Primeira Igreja Presbiteriana Independente do Recife</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core -->
+    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core -->
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/slick/slick.css"/>

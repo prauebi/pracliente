@@ -64,11 +64,26 @@ Template Name: Contact
 			        <?php the_content(''); ?>
 
               <form method="post" id="form">
-                <input type="text" name="name" placeholder="Digite seu nome completo aqui">
-                <input type="text" name="email" placeholder="Digite seu email">
-                <input type="text" name="phone" placeholder="Digite seu número">
-                <textarea name="assunto"></textarea>
-                <input type="submit" name="submit" value="Enviar">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" placeholder="Digite seu nome completo aqui">
+                </div>
+
+                <div class="col-md-6">  
+                  <input type="text" name="email" placeholder="Digite seu email">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" name="phone" placeholder="Digite seu número">  
+                </div>
+
+                <div class="col-md-12">
+                  <textarea name="assunto"></textarea>
+                </div>
+
+                <div class="col-md-2">
+                  <input type="submit" name="submit" value="Enviar">
+                </div>
               </form>
 
       	</div>

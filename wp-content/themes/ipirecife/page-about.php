@@ -7,7 +7,6 @@ Template Name: About
 <?php get_header(); ?>
 
 	<header>
-
       <!-- Fixed navbar -->
       <nav class="navbar navbar-default navbar-fixed-top navbar-white">
         <div class="container">
@@ -64,164 +63,17 @@ Template Name: About
       
   </header>
 
-
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
       <div class="container">
+      <?php while ( have_posts() ) : the_post(); ?> 
 
-        <div class="row">
-          <h2 id="historico" class="target">Histórico</h2>
-          <div class="col-md-8">
-		        <?php the_content(''); ?>
-          </div>
+       <?php the_content(''); ?>
 
-          <div class="col-md-4" id="thumb-about">
-            <?php
-                  if ( has_post_thumbnail() ) {
-                  the_post_thumbnail();
-                } ?>
-          </div>
-        </div>
-
-        <section id="equipe">
-          <h2 class="target">equipe</h2>
-          <div id="equipe" class="row">
-
-            <div class="col-md-4 membro">
-              <div class="ball"></div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-            <div class="col-md-4 membro">
-              <div class="ball"></div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-            <div class="col-md-4 membro">
-              <div class="ball"></div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-          </div>
-        </section> <!-- /#equipe -->
-
-        <section id="nossa-crenca">
-          <h2 class="target">nossa crença</h2>
-          <div class="row">
-
-            <div class="col-md-4 crenca">
-              <h4>as escrituras</h4>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-            <div class="col-md-4 crenca">
-              <h4>deus</h4>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-            <div class="col-md-4 crenca">
-              <h4>jesus</h4>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-            <div class="col-md-4 crenca">
-              <h4>espírito santo</h4>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-            <div class="col-md-4 crenca">
-              <h4>salvação</h4>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-            <div class="col-md-4 crenca">
-              <h4>igrejas</h4>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-
-            <div class="col-md-12 text-center">
-              <h4>evangelismo</h4>
-
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. 
-
-          </div>
-        </section> <!-- /#nossa-crenca -->
-
-        <section id="localizacao">
-          <h2 class="target">localização</h2>
-          <div class="row">
-
-            <div class="col-md-6">
-              Estr. do Arraial, 4362<br>
-              Casa Amarela,<br>
-              Recife - PE,<br>
-              52070-230<br>
-            </div>
-
-            <div class="col-md-6">
-              contato@primeiraipirecife.com.br<br><br>
-              <b>Telefone:</b><br>
-              (81) 3441-1537
-            </div>
-
-          </div>
-        </section> <!-- /#localizacao -->
-
-
+      <?php 
+      endwhile; 
+      wp_reset_query(); ?>
       </div>
-
-
-    <?php endwhile; ?>
 
     </main><!-- .site-main -->
   </div><!-- .content-area -->

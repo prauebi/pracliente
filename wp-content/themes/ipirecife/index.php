@@ -38,20 +38,26 @@
 
     <div class="container">
 
-  		<div class="row top-buffer" id="focus">
+      <div class="col-md-12 top-buffer">
+        
+          <h1 class="text-center" id="descubra">Descubra o maravilhoso amor de Deus por você.</h1>  
+
+      </div>
+
+  		<div class="row" id="focus">
 
   			<div class="col-md-4">
           <div class="card" id="sou-novo">
 
             <div class="card-content center-block" id="content-novo">  
               <div class="card-icon">
-                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home01.png" id="sou-novo-icon"alt="icone">
+                  <img class="center-block" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home01.png" id="sou-novo-icon" alt="icone" class="center-block">
               </div>  
 
               <div class="card-caption" id="caption-novo">
                 <ul>
                   <li><a href="<?php echo get_home_url(); ?>/conheca-nos/">Conheça a 1ª IPI Recife</a></li>
-                  <li><a href="<?php echo get_home_url(); ?>/conheca-nos/#nossa-crenca">Nossa Crença</a></li>
+                  <li><a href="<?php echo get_home_url(); ?>/conheca-nos/#nossa-crenca">O que cremos</a></li>
                   <li><a href="<?php echo get_home_url(); ?>/nossos-encontros/">Nossos Encontros</a></li>
                 </ul>
               </div>
@@ -64,9 +70,9 @@
 
         <div class="col-md-4 active">
           <div class="card" id="sou-membro">
-            <div class="card-content center-block" id="content-membro">  
+            <div class="card-content" id="content-membro">  
               <div class="card-icon">
-                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home03.png" id="sou-membro-icon" alt="icone 2">
+                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home03.png" id="sou-membro-icon" alt="icone 2" class="center-block">
               </div>  
 
               <div class="card-caption" id="caption-membro">
@@ -87,7 +93,7 @@
           <div class="card" id="mensagens">
             <div class="card-content center-block" id="content-mensagens">  
               <div class="card-icon">
-                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home02.png" id="mensagens-icon" alt="icone 3">
+                  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/icon-home02.png" id="mensagens-icon" alt="icone 3" class="center-block">
               </div>  
 
               <div class="card-caption" id="caption-mensagens">
@@ -107,16 +113,24 @@
 
     </div> <!-- /container -->
 
-    <!-- <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/arrow.png" class="center-block" alt="arrow" id="lvlp"> -->
-
     <div class="nav-bottom">
-      <div class="lava-ipi"></div>
+    </div>
+
+    <div class="cta">
+      <div class="top-buffer">
+      </div>
+      <div class="col-md-8">
+        <h2>em busca de um sentido na sua vida?</h2>
+      </div>
+      <div class="col-md-2">
+        <button>SAIBA MAIS</button>
+      </div>
     </div>
 
     <div class="container">
-
+  
     <section id="eventos">
-      <div class="row top-buffer">
+      <div class="row">
         <h2>próximos eventos</h2>
 
         <section class="responsive slider">
@@ -217,7 +231,8 @@
             <b>Email:</b><br>
             contato@primeiraipirecife.com.br<br><br>
             <b>Telefone:</b><br>
-            (81) 3441-1537
+            (81) 3441-1537<br>
+            <span class="facebook"></span><span class="instagram"></span>
             
           </div>
         </section>
