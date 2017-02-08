@@ -119,12 +119,18 @@
     <div class="cta">
       <div class="top-buffer">
       </div>
-      <div class="col-md-8">
-        <h2>em busca de um sentido na sua vida?</h2>
+      
+      <div class="container">
+      
+        <div class="col-md-8">
+          <!-- <h2>em busca de um sentido na sua vida?</h2> -->
+        </div>
+        <div class="col-md-2">
+          <!-- <button>SAIBA MAIS</button> -->
+        </div>
+        
       </div>
-      <div class="col-md-2">
-        <button>SAIBA MAIS</button>
-      </div>
+
     </div>
 
     <div class="container">

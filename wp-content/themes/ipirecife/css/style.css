@@ -21,7 +21,6 @@ section {
   margin-top: 1em; }
 
 .box {
-  background-color: #222222;
   height: 200px;
   max-height: 195px;
   position: relative;
@@ -323,6 +322,12 @@ ul.nav {
   height: 100px;
   width: 100%;
   clear: both; }
+  .ctah2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bolder;
+    font-family: "Sansita", sans-serif; }
 
 .phone:before,
 .placeholder:before,
