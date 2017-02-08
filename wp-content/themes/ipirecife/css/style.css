@@ -239,8 +239,8 @@ ul.nav {
   background: #218df9; }
 
 .btn-fixed {
-  background: transparent !important;
-  border: 3px solid currentColor !important;
+  background: transparent;
+  border: 3px solid currentColor;
   color: inherit; }
   .btn-fixed:hover {
     background: #218df9;
@@ -317,17 +317,34 @@ ul.nav {
 
 .cta {
   background: url(images/cta.jpg) no-repeat center;
+  background-size: cover;
+  padding: 20px 0;
   margin: 0 auto;
   display: block;
-  height: 100px;
+  height: 100%;
   width: 100%;
-  clear: both; }
-  .ctah2 {
+  clear: both;
+  font-family: "Sansita", sans-serif;
+  color: white; }
+  .cta h2 {
     text-transform: uppercase;
-    color: white;
-    font-size: 1.8em;
+    font-size: 2.7em;
     font-weight: bolder;
-    font-family: "Sansita", sans-serif; }
+    border: 3px solid currentColor;
+    padding: 3px 10px 10px; }
+  .cta button {
+    border: none;
+    background: #2CC76C;
+    padding: 10px 20px;
+    margin-top: 28px;
+    border-radius: 20px;
+    border: #2CC76C 3px solid;
+    transition: all .2s;
+    font-size: 1.2em; }
+    .cta button:hover {
+      background: transparent;
+      color: #2CC76C;
+      border-color: currentColor; }
 
 .phone:before,
 .placeholder:before,

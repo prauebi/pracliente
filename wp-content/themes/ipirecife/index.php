@@ -121,12 +121,12 @@
       </div>
       
       <div class="container">
-      
-        <div class="col-md-8">
-          <!-- <h2>em busca de um sentido na sua vida?</h2> -->
+
+        <div class="col-md-8 text-center">
+          <h2>em busca de um sentido na sua vida?</h2>
         </div>
-        <div class="col-md-2">
-          <!-- <button>SAIBA MAIS</button> -->
+        <div class="col-md-4">
+          <button class="center-block">SAIBA MAIS</button>
         </div>
         
       </div>
