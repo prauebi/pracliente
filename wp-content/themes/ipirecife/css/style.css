@@ -239,8 +239,8 @@ ul.nav {
   background: #218df9; }
 
 .btn-fixed {
-  background: transparent;
-  border: 3px solid currentColor;
+  background: transparent !important;
+  border: 3px solid currentColor !important;
   color: inherit; }
   .btn-fixed:hover {
     background: #218df9;
